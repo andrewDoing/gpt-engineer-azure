@@ -1,5 +1,11 @@
 
 import openai
+import os
+
+openai.api_type = "azure"
+openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_base = os.environ["OPENAI_API_BASE"]
+openai.api_version = os.environ["OPENAI_API_VERSION"]
 
 
 class AI:
